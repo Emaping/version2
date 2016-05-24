@@ -1,0 +1,34 @@
+// Place all the styles related to the Activities controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* Per il logo */
+.logo {
+  color: #fff;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.logo a,
+.logo a:visited,
+.logo a:hover {
+    color: #fff;
+    text-transform: none;
+    text-decoration: none;
+}
+
+/* Per centrare */
+.page-content {
+  max-width: 1150px;
+  margin: auto;
+}
+.mdl-button{
+  padding: 0px 10px;
+
+}
+.mdl-button.buttom-right-fixed{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+
+}
