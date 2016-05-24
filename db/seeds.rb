@@ -5,18 +5,26 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-50.times do |i|
-  Activity.create!(
-    title: "Activity n.#{i+1}",
-    description: "description ##{i+1}",
-    category: "elders"
-  )
-end
+#50.times do |i|#
+#  Activity.create(
+#    title: "Activity n.#{i+1}",
+#    description: "description ##{i+1}",
+#    category: "elders"
+#  )
+#end
 
-50.times do |i|
-  Oragnization.create!(
+10.times do |i|
+  organization = Organization.create!(
     name: "Oragnization n.#{i+1}",
-    description: "description ##{i+1}",
+    description: "description ##{i+1}"
 
   )
+  2.times do |j|
+    Activity.create!(
+      title: "Activity n.#{j+1}",
+      description: "description ##{j+1}",
+      category: "elders",
+      organization: organization #gli passo direttamete l'oggetto
+    )
+  end
 end

@@ -9,6 +9,9 @@
   <strong>Description:</strong>
   <%= @organization.description %>
 </p>
+<p>
+  <%= link_to 'Activities', organization_activities_path(@organizations) %>
+</p>
 
 <%= link_to 'Edit', edit_organization_path(@organization) %> |
 <%= link_to 'Back', organizations_path %>

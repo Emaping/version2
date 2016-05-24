@@ -18,13 +18,13 @@
             </div>
             <div class="mdl-card__actions">
               <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                <%= link_to 'Show', activity, :class => "mdl-button mdl-js-button mdl-button--raised mdl-button--colored"%>
+                <%= link_to 'Show', organization_activity_path(@organization, activity), :class => "mdl-button mdl-js-button mdl-button--raised mdl-button--colored"%>
               </button>
               <button class="mdl-button mdl-js-button mdl-button--raised">
-              <%= link_to 'Edit', edit_activity_path(activity), :class => "mdl-button mdl-js-button mdl-button--raised" %>
+              <%= link_to 'Edit', edit_organization_activity_path(@organization, activity), :class => "mdl-button mdl-js-button mdl-button--raised" %>
               </button>
               <button class="mdl-button mdl-js-button mdl-button--raised">
-              <%= link_to 'Destroy', activity, method: :delete, data: { confirm: 'Are you sure?' }, :class => "mdl-button mdl-js-button mdl-button--raised" %>
+              <%= link_to 'Destroy', organization_activity_path(@organization, activity), method: :delete, data: { confirm: 'Are you sure?' }, :class => "mdl-button mdl-js-button mdl-button--raised" %>
               </button>
 
           </div>
@@ -36,9 +36,7 @@
 
 
 <br>
-<!--
-<%= link_to'<i class="material-icons">add</i>'.html_safe , new_activity_path, :class => "mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" %>
--->
-<%= link_to  new_activity_path, :class => "buttom-right-fixed mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" do%>
+
+<%= link_to  new_organization_activity_path, :class => "buttom-right-fixed mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" do%>
     <i class="material-icons">add</i>
 <% end %>
